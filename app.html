@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>IdeaBox</title>
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body class="blue-grey lighten-5">
+
+  <!-- App Bar -->
+  <nav class="blue-grey darken-3">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo">Consultora tecnològica</a>
+    </div>
+  </nav>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <h1 class="center-align">Ideas del Equipo</h1>
+
+    <!-- Formulario -->
+    <div class="row">
+      <form class="col s12 m6 offset-m3">
+        <div class="input-field">
+          <i class="material-icons prefix medium">account_circle</i>
+          <input id="nombre" type="text" class="validate">
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix medium">lightbulb</i>
+          <input id="idea" type="text" class="validate">
+          <label for="idea">Tu Idea</label>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Sección de ideas -->
+  <div class="container">
+    <h2 class="center-align">Ideas Recientes</h2>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Idea</span>
+            <p><strong>Juan:</strong> Hacer una app para gestión de reuniones</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Idea</span>
+            <p><strong>Lucia:</strong> Integrar IA en el chatbot del sitio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Action Button -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red waves-effect waves-light" onclick="enviarIdea()">
+      <i class="material-icons">send</i>
+    </a>
+  </div>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    function enviarIdea() {
+      M.toast({ html: '¡Idea enviada con éxito!', classes: 'rounded' });
+    }
+  </script>
+</body>
+
+</html>

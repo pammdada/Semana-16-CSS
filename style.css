@@ -1,0 +1,20 @@
+body{
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f5f7fa;
+      color: #263238;
+ }
+ 
+.card {
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(38,50,56,0.08);
+      transition: box-shadow 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(38,50,56,0.18);
+    }
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #263238;
+      margin-bottom: 12px;
+    }

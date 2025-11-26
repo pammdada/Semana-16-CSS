@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultora Digital - Inicio</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    /* Mejor separar estilos en un archivo externo para mantenimiento */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f5f7fa;
+      color: #263238;
+    }
+    .hero {
+      background: linear-gradient(rgba(120,144,156,0.4), rgba(120,144,156,0.4)), url('https://picsum.photos/1600/500?blur') center/cover no-repeat;
+      padding: 120px 0 80px 0;
+      color: #fff;
+      text-shadow: 1px 1px 4px #000;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 8px 32px hsla(212, 85%, 21%, 0.2);
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 32px;
+    }
+    .btn-large {
+      border-radius: 30px;
+      padding: 0 40px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: background 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 16px rgba(38,50,56,0.15);
+    }
+    .btn-large:hover, .btn-large:focus {
+      background: #37474f !important;
+      box-shadow: 0 8px 24px rgba(38,50,56,0.25);
+    }
+    section.section {
+      margin-top: 48px;
+      margin-bottom: 48px;
+    }
+    .card {
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(38,50,56,0.08);
+      transition: box-shadow 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 8px 32px rgba(38,50,56,0.18);
+    }
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #263238;
+      margin-bottom: 12px;
+    }
+    .material-icons.left {
+      font-size: 2rem;
+      color: #37474f;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    .grey.lighten-4 {
+      border-radius: 24px;
+      padding: 32px 0;
+    }
+    .input-field input:focus, .input-field textarea:focus {
+      border-bottom: 2px solid #37474f !important;
+      box-shadow: 0 1px 0 0 #37474f !important;
+    }
+    .page-footer {
+      background: linear-gradient(90deg, #263238 60%, #37474f 100%);
+      padding-top: 36px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      box-shadow: 0 -4px 24px rgba(38,50,56,0.12);
+    }
+    .page-footer h5 {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .page-footer ul li a:hover {
+      text-decoration: underline;
+      color: #fff !important;
+    }
+    @media (max-width: 600px) {
+      .hero {
+        padding: 60px 0 40px 0;
+        border-radius: 0;
+      }
+      .grey.lighten-4 {
+        border-radius: 0;
+        padding: 16px 0;
+      }
+      .page-footer {
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue-grey darken-3" role="navigation" aria-label="Menú principal">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo" aria-label="Inicio Consultora Digital">Consultora Digital</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero center-align" role="banner">
+    <h1 class="hide">Consultora Digital</h1>
+    <h2>Soluciones digitales a tu medida</h2>
+    <p>Consultoría estratégica en tecnología e innovación</p>
+    <a class="btn-large blue-grey darken-4 waves-effect waves-light" href="#contacto">Contáctanos</a>
+  </header>
+
+  <!-- Servicios -->
+  <section class="container section" id="servicios" aria-labelledby="servicios-titulo">
+    <h2 class="center-align" id="servicios-titulo">Nuestros Servicios</h2>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">
+              <i class="material-icons left" aria-hidden="true">insights</i>
+              Análisis de Datos
+            </span>
+            <p>Transformamos datos en decisiones estratégicas con herramientas de inteligencia de negocios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">
+              <i class="material-icons left" aria-hidden="true">developer_mode</i>
+              Desarrollo Web
+            </span>
+            <p>Desarrollamos plataformas seguras, modernas y adaptables usando las mejores prácticas de ingeniería.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">
+              <i class="material-icons left" aria-hidden="true">security</i>
+              Ciberseguridad
+            </span>
+            <p>Evaluamos y protegemos tu infraestructura digital para mitigar riesgos y vulnerabilidades.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section class="section grey lighten-4" id="nosotros" aria-labelledby="nosotros-titulo">
+    <div class="container">
+      <h2 class="center-align" id="nosotros-titulo">¿Quiénes Somos?</h2>
+      <p class="flow-text center-align">
+        Somos una consultora tecnológica con más de 10 años de experiencia asesorando a empresas en su transformación digital. Nuestro equipo está formado por especialistas en ingeniería de software, datos y seguridad informática.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="container section" id="contacto" aria-labelledby="contacto-titulo">
+    <h2 class="center-align" id="contacto-titulo">Contáctanos</h2>
+    <form autocomplete="off" novalidate>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="nombre" name="nombre" type="text" class="validate" required aria-required="true" autocomplete="name">
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="email" name="email" type="email" class="validate" required aria-required="true" autocomplete="email">
+          <label for="email">Correo Electrónico</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="mensaje" name="mensaje" class="materialize-textarea" required aria-required="true"></textarea>
+          <label for="mensaje">Mensaje</label>
+        </div>
+        <div class="col s12 center-align">
+          <button type="submit" class="btn-large blue-grey darken-4 waves-effect waves-light">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Consultora Digital</h5>
+          <p class="grey-text text-lighten-4">Impulsamos el crecimiento tecnológico de tu organización.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Enlaces</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#servicios">Servicios</a></li>
+            <li><a class="grey-text text-lighten-3" href="#nosotros">Nosotros</a></li>
+            <li><a class="grey-text text-lighten-3" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">
+        © 2025 Consultora Digital. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
